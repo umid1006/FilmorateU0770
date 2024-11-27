@@ -74,7 +74,7 @@ public class UserController {
             }
             if (user.getBirthday() != null) {
                 existingUser.setBirthday(user.getBirthday());
-            }else { // If name is empty or null
+            } else { // If name is empty or null
                 // Either keep the existing name or set it to the login
                 existingUser.setName(existingUser.getLogin()); // Or keep the existing name
             }
